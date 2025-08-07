@@ -1,9 +1,11 @@
+import { Link } from "expo-router";
 import { StyleSheet, Text, View } from "react-native";
 
 export default function Index() {
   return (
     <View style={styles.container}>
       <Text style={styles.content}>Natole</Text>
+      <Link href="/about">visit about screen</Link>
     </View>
   );
 }
