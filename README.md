@@ -2,7 +2,7 @@
 
 
 ````markdown
-# 📋 Expo Todo App
+# 📋 Expo Todo App 
 
 A simple and responsive Todo app built with [Expo](https://expo.dev) and [Convex](https://convex.dev) for real-time backend functionality.  
 This project was bootstrapped with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
