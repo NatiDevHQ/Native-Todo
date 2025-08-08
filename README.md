@@ -21,7 +21,7 @@ This project was bootstrapped with [`create-expo-app`](https://www.npmjs.com/pac
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/expo-todo-app.git
+git clone https://github.com/NatiDevHQ/expo-todo-app.git
 cd expo-todo-app
 ````
 
