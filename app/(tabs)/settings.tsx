@@ -1,7 +1,14 @@
-import React from "react";
+import { createSettingsStyles } from "@/assets/styles/settings.styles";
+import useTheme from "@/hooks/useTheme";
+import React, { useState } from "react";
 import { Text, View } from "react-native";
 
-const settings = () => {
+const settingsScreen = () => {
+  const [isAutoSync, setIsAutoSync] = useState(true);
+  const [isNotificationEnable, setIsNotificationEnable] = useState(true);
+
+  const { colors, isDarkMode, toggleDarkMode } = useTheme();
+  const settingsStyles = createSettingsStyles(colors);
   return (
     <View>
       <Text>settings</Text>
@@ -9,4 +16,4 @@ const settings = () => {
   );
 };
 
-export default settings;
+export default settingsScreen;
