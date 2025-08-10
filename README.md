@@ -1,50 +1,104 @@
-# Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-## Get started
 
-1. Install dependencies
+````markdown
+# 📋 Expo Todo App 
 
-   ```bash
-   npm install
-   ```
+A simple and responsive Todo app built with [Expo](https://expo.dev) and [Convex](https://convex.dev) for real-time backend functionality.  
+This project was bootstrapped with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-2. Start the app
+## ✨ Features
 
-   ```bash
-   npx expo start
-   ```
+- ✅ Add, edit, and delete todos
+- 🔄 Real-time sync using Convex backend
+- 📱 Runs on Android, iOS, and Web
+- ⚡ Fast and lightweight with Expo
+- ☁️ Backend-less setup thanks to Convex’s managed services
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🚀 Getting Started
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### 1. Clone the Repository
+```bash
+git clone https://github.com/NatiDevHQ/expo-todo-app.git
+cd expo-todo-app
+````
 
-## Get a fresh project
-
-When you're ready, run:
+### 2. Install Dependencies
 
 ```bash
-npm run reset-project
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 3. Set up Convex
 
-## Learn more
+1. Create a Convex account at [https://dashboard.convex.dev](https://dashboard.convex.dev)
+2. Create a new Convex project
+3. Copy your **CONVEX\_URL** and update the `.env` file:
 
-To learn more about developing your project with Expo, look at the following resources:
+```env
+EXPO_PUBLIC_CONVEX_URL=your-convex-url
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+4. Push Convex functions:
 
-## Join the community
+```bash
+npx convex dev
+```
 
-Join our community of developers creating universal apps.
+### 4. Start the App
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```bash
+npx expo start
+```
+
+Choose one of the options:
+
+* 📱 **Development Build**
+* 📱 **Android Emulator**
+* 🍏 **iOS Simulator**
+* 🌐 **Web Browser**
+* 📲 **Expo Go** (limited sandbox)
+
+---
+
+## 📂 Project Structure
+
+```
+.
+├── app/                # Screens and navigation (file-based routing)
+├── convex/             # Convex backend functions
+├── components/         # Reusable UI components
+├── .env                # Environment variables (Convex URL)
+├── package.json        # Dependencies and scripts
+└── README.md
+```
+
+---
+
+## 🛠 Scripts
+
+* `npm start` – Start Expo in development mode
+* `npm run android` – Run on Android
+* `npm run ios` – Run on iOS
+* `npm run web` – Run on Web
+* `npm run reset-project` – Reset to a fresh project
+
+---
+
+## 📚 Learn More
+
+* [Expo Documentation](https://docs.expo.dev/) – Fundamentals and advanced guides
+* [Convex Documentation](https://docs.convex.dev/) – Real-time backend setup
+* [React Native Docs](https://reactnative.dev/) – Learn the framework powering Expo
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
+Feel free to use and modify it as you like.
+
+```
+
