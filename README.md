@@ -1,4 +1,4 @@
-Improve it later........
+Improve it 👍..........
 
 
 ````markdown
@@ -13,8 +13,7 @@ This project was bootstrapped with [`create-expo-app`](https://www.npmjs.com/pac
 - 🔄 Real-time sync using Convex backend
 - 📱 Runs on Android, iOS, and Web
 - ⚡ Fast and lightweight with Expo
-- ☁️ Backend-less setup thanks to Convex’s managed services
-
+- ☁️ Backend-less setup thanks to Convex’s managed service
 ---
 
 ## 🚀 Getting Started
